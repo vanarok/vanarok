@@ -1,5 +1,6 @@
 ### Hi there 👋
 ![](https://komarev.com/ghpvc/?username=vanarok&style=flat-square)
+[![wakatime](https://wakatime.com/badge/user/76b162c4-6dc9-459b-b605-f7c40fce0afb.svg)](https://wakatime.com/@76b162c4-6dc9-459b-b605-f7c40fce0afb)
 
 <!--
 **vanarok/vanarok** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
