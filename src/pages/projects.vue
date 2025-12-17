@@ -259,6 +259,14 @@ const projects = computed(() => {
       pictures: [],
       description: [],
     },
+    {
+      name: 'macpak',
+      skills: [],
+      previewPicture: '/macpak-preview.svg',
+      logo: '/macpak-preview.svg',
+      pictures: [],
+      description: [],
+    },
   ]
 }) as unknown as Project[]
 </script>
