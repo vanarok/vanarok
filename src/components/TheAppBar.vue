@@ -5,7 +5,9 @@ import AppLogo from './AppLogo.vue'
 const { t, locale } = useI18n()
 
 function toggleLocales() {
-  locale.value = locale.value === 'ru' ? 'en' : 'ru'
+  const newLocale = locale.value === 'ru' ? 'en' : 'ru'
+  locale.value = newLocale
+  localStorage.setItem('locale', newLocale)
 }
 
 const toggleDark = useToggleDark()

@@ -16,10 +16,19 @@ const messages = Object.fromEntries(
   }),
 )
 
+function getInitialLocale(): string {
+  if (typeof window === 'undefined')
+    return 'en'
+  const saved = localStorage.getItem('locale')
+  if (saved)
+    return saved
+  return navigator?.language?.startsWith('ru') ? 'ru' : 'en'
+}
+
 export const install: UserModule = ({ app }) => {
   const i18n = createI18n({
     legacy: false,
-    locale: typeof window !== 'undefined' ? navigator?.language : 'en',
+    locale: getInitialLocale(),
     messages,
   })
 
